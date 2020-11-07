@@ -1,12 +1,13 @@
 html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-    background: #282a36;
-    color: #f8f8f2;
-    display: flex;
+  background: #282a36;
+  color: #f8f8f2;
+  display: flex;
   flex-direction: column;
 }
 
@@ -15,13 +16,27 @@ body {
   color: white;
   padding: 15px;
   text-align: center;
-
 }
 
 #footer {
-    margin-top: auto;
-    
-    background: #007BFF;
-    color: white;
-    padding: 15px;
+  margin-top: auto;
+  background: #007BFF;
+  color: white;
+  padding: 15px;
+}
+
+#autotext {
+  border-right: 0.15em solid #ff76c6;
+  letter-spacing: 0.05em;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: #ff76c6;
+  }
+}
