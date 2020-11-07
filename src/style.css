@@ -1,0 +1,28 @@
+html, body {
+  background: #282a36;
+  color: #f8f8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#autotext {
+  border-right: 0.15em solid #ff79c6;
+  letter-spacing: 0.05em;
+  animation-name: blink;
+  animation-timing-function: step-end;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from, 
+  to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #ff79c6;
+  }
+}

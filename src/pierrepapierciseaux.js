@@ -27,14 +27,3 @@ for (let i = 0; i < buttons.length; i++) {
      // console.log(`Joueur: ${joueur} VS Robot: ${robot}`)
   })
 }
-
-import "./style.css";
-
-const title = document.getElementById('autotext');
-const text = "Pierre Feuille Ciseaux";
-
-const play = () => {
-    title.innerHTML = text
-}
-
-play()
