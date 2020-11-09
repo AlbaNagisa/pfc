@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     return res.status(200).end(fs.readFileSync('./index.html', {encoding: 'utf-8'}));
 })
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server: http://localhost:${PORT}`)
 })
 
