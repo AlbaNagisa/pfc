@@ -5,7 +5,7 @@ var link = document.createElement('link');
       
         link.type = 'text/css'; 
       
-        link.href = 'src/style.css';  
+        link.href = 'static/style.css';  
   
         // Get HTML head element to append  
         // link element to it  
@@ -21,13 +21,12 @@ const speed = (min, max) => {
 }
 
 const play = () => {
+    
     title.innerHTML = text.slice(0, index);
 
     index++;
 
-    if (index > index.length) {
-        index = 0;
-    }
+    
     clearInterval(timer);
     timer = setInterval(play, speed(50, 300));
 };

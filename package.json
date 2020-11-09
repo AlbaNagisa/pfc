@@ -1,0 +1,23 @@
+{
+  "name": "pfc",
+  "version": "0.1.0",
+  "description": "��#\u0000 \u0000p\u0000f\u0000c\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alban9562/pfc.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alban9562/pfc/issues"
+  },
+  "homepage": "https://github.com/Alban9562/pfc#readme"
+}
