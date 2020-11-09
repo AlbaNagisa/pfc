@@ -1,7 +1,7 @@
 const fs = require('fs')
 const express = require('express')
 const app = express()
-const port = 3000    
+const PORT = 3000 || process.env.PORT
     
 app.use("/static", express.static('./public/'));
 
@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Server: http://localhost:${port}`)
+  console.log(`Server: http://localhost:${PORT}`)
 })
 
