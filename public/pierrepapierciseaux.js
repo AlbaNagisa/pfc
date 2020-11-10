@@ -25,10 +25,11 @@ for (let i = 0; i < buttons.length; i++) {
             score_bot++;
         }
         document.querySelector(".resultat").innerHTML = `
+        <div class="color">
        Joueur: ${joueur} Score: ${score_joueur} </br>
        Robot: ${robot} Score: ${score_bot}</br>
        ${resultat}
-       `;
+       </div>`;
         function victoire(j, b) {
             j = score_joueur
             b = score_bot
