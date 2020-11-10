@@ -3,7 +3,6 @@ let score_joueur = 0;
 let score_bot = 0;
 
 for (let i = 0; i < buttons.length; i++) {
-    console.log(buttons[0])
     buttons[i].addEventListener("click", function () {
         const f = "Feuille";
         const c = "Ciseaux";
@@ -25,16 +24,15 @@ for (let i = 0; i < buttons.length; i++) {
             score_bot++;
         }
         document.querySelector(".resultat").innerHTML = `
-        <div class="color">
        Joueur: ${joueur} Score: ${score_joueur} </br>
        Robot: ${robot} Score: ${score_bot}</br>
        ${resultat}
-       </div>`;
+       `;
         function victoire(j, b) {
             j = score_joueur
             b = score_bot
-            if (j < b) return `victoire du Robot à ${score_bot} contre ${score_joueur} pour Robot`
-            else return `victoire du Joueur à ${score_joueur} contre ${score_bot} pour Joueur`
+            if (j < b) return `victoire du Robot à ${score_bot} contre ${score_joueur} pour Joueur`
+            else return `victoire du Joueur à ${score_joueur} contre ${score_bot} pour Robot`
             
 }
         if (score_joueur === 5) {
